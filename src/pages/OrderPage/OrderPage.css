@@ -26,3 +26,50 @@
   text-align: center;
   font-family: 'Playfair Display', serif;
 }
+
+.order-card form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.form-label {
+  color: var(--text-primary);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid rgba(248, 241, 245, 0.2);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--text-primary);
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.order-feedback {
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.95rem;
+}
+
+.order-feedback.success {
+  background: rgba(62, 207, 142, 0.15);
+  border: 1px solid rgba(62, 207, 142, 0.55);
+  color: #8dffd0;
+}
+
+.order-feedback.error {
+  background: rgba(255, 91, 91, 0.15);
+  border: 1px solid rgba(255, 91, 91, 0.45);
+  color: #ffc0c0;
+}
