@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./OrderPage.css";
-import "../../components/Inputs/Input";
-import Button from "../../components/Button/Button";
+import Input from "../../components/Inputs/Inputs";
+import Button from "../../components/Buttons/Button";
 
 export default function OrderPage() {
   const [name, setName] = useState("");

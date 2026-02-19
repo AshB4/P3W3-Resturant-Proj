@@ -1,4 +1,7 @@
+
+import "./Hero.css";
 import Logo from "../logo/logo";
+import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
   return (

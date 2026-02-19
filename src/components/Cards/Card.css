@@ -1,5 +1,8 @@
 .card {
   display: flex;
+  width: min(56vw, 980px);
+  min-height: 360px;
+  margin: 0 auto;
   background: linear-gradient(
     135deg,
     #2C1E28 0%,
@@ -18,7 +21,7 @@
 
 .card-image {
   flex: 1;
-  min-width: 300px;
+  min-width: 320px;
 }
 
 .card-image img {
@@ -56,6 +59,8 @@
 @media (max-width: 1024px) {
   .card {
     flex-direction: column;
+    width: min(92vw, 740px);
+    min-height: auto;
   }
 
   .card-image {
@@ -77,4 +82,3 @@
     font-size: 1.1rem;
   }
 }
-

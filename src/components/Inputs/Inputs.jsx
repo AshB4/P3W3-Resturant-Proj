@@ -1,6 +1,6 @@
-import "./Input.css";
+import "./Inputs.css";
 
-export default function Input({
+export default function Inputs({
   label,
   type = "text",
   value,
