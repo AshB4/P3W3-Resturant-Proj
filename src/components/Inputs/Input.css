@@ -1,0 +1,33 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+.form-input,
+.form-textarea {
+  background: #1A1418;
+  border: 1px solid #B83280;
+  border-radius: 8px;
+  padding: 0.8rem;
+  color: var(--text-primary);
+  transition: 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--accent-secondary);
+  box-shadow: 0 0 6px rgba(159, 122, 234, 0.4);
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}

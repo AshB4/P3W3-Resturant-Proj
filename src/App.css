@@ -1,0 +1,66 @@
+/* =========================================
+   RESET
+========================================= */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button, input, textarea {
+  font-family: inherit;
+}
+
+/* =========================================
+   BRAND VARIABLES
+========================================= */
+
+:root {
+  --bg-dark: #1A1418;
+  --surface-dark: #2C1E28;
+  --accent-primary: #B83280;
+  --accent-secondary: #9F7AEA;
+  --text-primary: #F8F1F5;
+  --text-muted: rgba(248, 241, 245, 0.7);
+
+  --transition-fast: 0.2s ease;
+  --transition-smooth: 0.3s ease;
+
+  --border-radius: 8px;
+}
+
+/* =========================================
+   BASE TYPOGRAPHY
+========================================= */
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+p {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+

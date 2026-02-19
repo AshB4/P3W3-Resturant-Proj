@@ -1,0 +1,38 @@
+.btn {
+  padding: 0.9rem 2.2rem;
+  border-radius: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(
+    135deg,
+    #B83280,
+    #7A1F54
+  );
+  color: #F8F1F5;
+  box-shadow:
+    0 4px 15px rgba(184, 50, 128, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 6px 20px rgba(184, 50, 128, 0.6);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #B83280;
+  color: #B83280;
+}
+
+.btn-outline:hover {
+  background: #B83280;
+  color: #F8F1F5;
+}

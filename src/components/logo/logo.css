@@ -1,0 +1,26 @@
+.neon-text {
+  color: var(--accent-primary);
+  text-shadow:
+    0 0 4px rgba(184, 50, 128, 0.6),
+    0 0 10px rgba(184, 50, 128, 0.5),
+    0 0 20px rgba(184, 50, 128, 0.3);
+}
+
+@keyframes neonFlicker {
+  0%   { opacity: 1; }
+  10%  { opacity: 0.5; }
+  20%  { opacity: 1; }
+
+  30%  { opacity: 0.6; }
+  40%  { opacity: 1; }
+
+  50%  { opacity: 0.7; }
+  60%  { opacity: 1; }
+
+  100% { opacity: 1; }
+}
+
+
+.logo-404:hover {
+  animation: neonFlicker 1.2s ease-in-out;
+}
