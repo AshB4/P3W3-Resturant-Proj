@@ -4,19 +4,16 @@ import Button from "../../components/Buttons/Button";
 import BotIcon from "../../assets/BotIcon.png";
 import "./Chatbot.css";
 
-const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-const GEMINI_MODEL = import.meta.env.VITE_GEMINI_MODEL || "gemini-2.0-flash";
-const GEMINI_ENDPOINT =
-  `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
+const GEMINI_ENDPOINT= `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${import.meta.env.VITE_GEMINI_API_KEY}`;
 
 const WAITER_SYSTEM_PROMPT = `
-You are an upscale restaurant waiter with subtle, intelligent humor — dry wit, never cheesy.
-Only answer questions about food and drinks from the provided menu.
-If asked about anything else, politely refuse and redirect to the menu.
-Do not invent items.
-Keep responses short, service-oriented, and tasteful.
-If refusing, do NOT use humor.
-`;
+  You are a refined restaurant waiter with dry wit.
+  Answer only from the provided menu (food and drinks).
+  If asked anything else, politely refuse and redirect to the menu.
+  Do not invent items.
+  Keep replies brief and service-focused.
+  No humor in refusals.
+  `;
 
 const INITIAL_ASSISTANT_MESSAGE =
   "Welcome to The 404 Lounge. Ask me about any food or drinks on our menu.";
