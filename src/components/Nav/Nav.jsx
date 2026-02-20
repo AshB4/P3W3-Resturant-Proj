@@ -23,7 +23,7 @@ export default function Navbar() {
           Menu
         </NavLink>
         <NavLink to="/order">
-          Order Now
+          Order
         </NavLink>
         <NavLink to="/chatbot">
           Chatbot

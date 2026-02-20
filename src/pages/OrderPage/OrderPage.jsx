@@ -82,7 +82,7 @@ export default function OrderPage() {
           )}
 
           <Button type="submit" disabled={isSubmitting}>
-            {isSubmitting ? "Submitting..." : "Submit Order"}
+            {isSubmitting ? "Submitting..." : "Order Now"}
           </Button>
         </form>
       </div>
