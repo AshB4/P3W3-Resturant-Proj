@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Card from "../components/Cards/Card";
-import { supabase } from "../supabaseClient";
+import Card from "../../components/Cards/Card";
+import { supabase } from "../../supabaseClient";
 import "./Menu.css";
 
 export default function Menu() {

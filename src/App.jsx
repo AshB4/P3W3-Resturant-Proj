@@ -2,9 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
-import Menu from "./pages/Menu";
+import Menu from "./pages/Menu/Menu";
 import OrderPage from "./pages/OrderPage/OrderPage";
-import Chatbot from "./pages/Chatbot";
+import Chatbot from "./pages/Chatbot/Chatbot";
 
 function App() {
   return (
